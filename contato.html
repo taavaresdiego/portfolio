@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato - Equipe de Desenvolvedores</title>
+    <meta
+      name="description"
+      content="Entre em contato com a equipe de desenvolvedores Front End Diego Tavares e Lucas Caitano."
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="grid-container">
+      <nav class="menu" data-menu="suave">
+        <button data-menu="button" aria-expanded="false" aria-controls="menu">
+          Menu
+        </button>
+        <ul data-menu="list" id="menu">
+          <li><a href="#equipe">equipe</a></li>
+          <li><a href="./diego.html">Diego</a></li>
+          <li><a href="#">Lucas</a></li>
+          <li><a href="#faq">Sobre Nós</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a data-modal="abrir" href="">Login →</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="contato-pagina-container">
+      <h1>Fale Conosco</h1>
+      <h2>Estamos disponíveis para novos projetos.</h2>
+      <form id="contato-form">
+        <input type="text" id="nome" required placeholder="Nome completo" />
+        <input
+          type="email"
+          id="email"
+          required
+          placeholder="Seu melhor e-mail"
+        />
+        <textarea id="mensagem" required placeholder="Sua mensagem"></textarea>
+        <button type="submit" id="botao-enviar">Enviar Mensagem</button>
+      </form>
+      <p class="success-message"></p>
+      <p class="error-message"></p>
+    </main>
+
+    <div class="grid-container">
+      <footer class="copy">
+        <p>Todos os direitos reservados.</p>
+      </footer>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

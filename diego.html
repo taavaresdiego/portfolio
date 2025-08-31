@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <nav class="menu" data-menu="suave">
+        <button data-menu="button" aria-expanded="false" aria-controls="menu">
+          Menu
+        </button>
+        <ul data-menu="list" id="menu">
+          <li><a href="./index.html">equipe</a></li>
+          <li><a href="./diego.html">Diego</a></li>
+          <li><a href="#lucas">Lucas</a></li>
+          <li><a href="#faq">Sobre Nós</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+          <li><a data-modal="abrir" href="">Login →</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="introducao">
+      <img
+        src="./assets/img/Ellipse 1.png"
+        alt="Diego's profile picture"
+        width="360"
+        height="30"
+      />
+      <div>
+        <h1>Data Analyst<br />& Software<br />Developer</h1>
+        <p>Based in Campina Grande, PB 🌵</p>
+      </div>
+    </main>
+
+    <section class="experiencia" id="experiencia" aria-label="Experience">
+      <h2 class="subtitulo">Experience</h2>
+      <div>
+        <p class="experiencia-texto">
+          I develop data-driven solutions and web applications. In my current
+          analytical role, I use <strong>Excel</strong> and
+          <strong>SQL</strong> principles to audit processes and ensure data
+          integrity. As a developer, I have led front-end projects using
+          <strong>JavaScript</strong>, <strong>HTML</strong>, and
+          <strong>CSS</strong>, focusing on both technical implementation and
+          <strong>UI/UX Design</strong>.
+        </p>
+
+        <div class="empresa">
+          <span class="empresa-ano">2025-Current</span>
+          <h3 class="empresa-titulo">A&C - Itaú</h3>
+          <span class="empresa-titulo">Administrative Analyst</span>
+          <p class="empresa-texto">
+            In my current role, I analyze client demands and audit banking
+            processes. I use analytical tools like Excel to ensure data
+            integrity and identify areas for improvement.
+          </p>
+          <ul class="empresa-habilidades">
+            <li>Data Analysis</li>
+            <li>Process Auditing</li>
+            <li>Excel</li>
+            <li>Problem Solving</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+
+        <div class="empresa">
+          <span class="empresa-ano">2024</span>
+          <h3 class="empresa-titulo">BRCR Law Firm</h3>
+          <span class="empresa-titulo">Front-end Developer (Freelance)</span>
+          <p class="empresa-texto">
+            I took the technical lead on the firm's website redesign. I managed
+            the project from UI design in Figma to final implementation,
+            coordinating tasks and ensuring a high-quality delivery.
+          </p>
+          <ul class="empresa-habilidades">
+            <li>JavaScript</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>UI Design</li>
+            <li>Git</li>
+          </ul>
+        </div>
+
+        <div class="empresa">
+          <span class="empresa-ano">2024</span>
+          <h3 class="empresa-titulo">Resília Educação</h3>
+          <span class="empresa-titulo">Full Stack Student Developer</span>
+          <p class="empresa-texto">
+            Completed an intensive 6-month bootcamp focused on full-stack web
+            development. Developed several projects using technologies like
+            React, Node.js, and TypeScript.
+          </p>
+          <ul class="empresa-habilidades">
+            <li>React</li>
+            <li>Node.js</li>
+            <li>TypeScript</li>
+            <li>MongoDB</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="formacao" id="formacao" aria-label="Education">
+      <div class="formacao-container">
+        <h2 class="subtitulo">Education</h2>
+
+        <div>
+          <p class="formacao-texto">
+            My most recent academic experience is my ongoing
+            <strong>bachelor's degree</strong> 🎓 in
+            <strong>Information Systems</strong>. Besides that, I'm always
+            keeping myself up to date with intensive courses focused on data and
+            development.
+          </p>
+
+          <ul class="faculdade-lista">
+            <li class="faculdade">
+              <span class="faculdade-tipo">Bachelor</span>
+              <h3 class="faculdade-curso">Information Systems</h3>
+              <span class="faculdade-instituicao">Unifacisa</span>
+            </li>
+            <li class="faculdade">
+              <span class="faculdade-tipo">Bootcamp</span>
+              <h3 class="faculdade-curso">Full Stack Web Development</h3>
+              <span class="faculdade-instituicao">Resília Educação</span>
+            </li>
+          </ul>
+
+          <div class="formacao-extra">
+            <div class="cursos">
+              <h3>Key Courses</h3>
+              <ul>
+                <li>Data Analysis with Python <span>40h</span></li>
+                <li>Advanced SQL for Analytics <span>35h</span></li>
+              </ul>
+            </div>
+            <div class="idiomas">
+              <h3>Languages</h3>
+              <ul>
+                <li>Portuguese <span>/ Native</span></li>
+                <li>English <span>/ Professional</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="modal-container" data-modal="container">
+      <div class="modal">
+        <button data-modal="fechar" class="fechar">X</button>
+        <form action="">
+          <label for="email">Email</label>
+          <input type="text" for="email" id="email" />
+          <label for="senha">Senha</label>
+          <input type="password" for="senha" id="senha" />
+          <button type="submit">Entrar</button>
+        </form>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>

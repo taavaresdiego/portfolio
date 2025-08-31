@@ -1,4 +1,10 @@
 @import "global.css";
+@import "./geral.css";
+@import "./dropdown-menu.css";
+@import "./menu-mobile.css";
+@import "./modal.css";
+@import "./tooltip.css";
+@import "./contato.css";
 @import "./header.css";
 @import "./introducao.css";
 @import "./experiencia.css";

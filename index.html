@@ -1,171 +1,164 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Desenvolvedores</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display+SC"
+      rel="stylesheet"
+    />
+    <script>
+      document.documentElement.className += " js";
+    </script>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header">
-      <img
-        src="././assets/img/PORTFÓLIO.svg"
-        width="100px"
-        alt="marca do portfólio"
-      />
-      <nav>
-        <ul class="header-menu">
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#academic">Academic Background</a></li>
-          <li><a href="#contact">Contact</a></li>
+    <div class="grid-container">
+      <nav class="menu" data-menu="suave">
+        <button data-menu="button" aria-expanded="false" aria-controls="menu">
+          Menu
+        </button>
+        <ul data-menu="list" id="menu">
+          <li><a href="#equipe">equipe</a></li>
+          <li><a href="./diego.html">Diego</a></li>
+          <li><a href="#">Lucas</a></li>
+          <li><a href="#faq">Sobre Nós</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+          <li><a data-modal="abrir" href="">Login →</a></li>
         </ul>
       </nav>
-    </header>
-
-    <main class="introducao">
-      <img
-        src="./assets/img/Ellipse 1.png"
-        alt="Diego's profile picture"
-        width="360"
-        height="30"
-      />
-      <div>
-        <h1>Data Analyst<br />& Software<br />Developer</h1>
-        <p>Based in Campina Grande, PB 🌵</p>
-      </div>
-    </main>
-
-    <section class="experiencia" id="experiencia" aria-label="Experience">
-      <h2 class="subtitulo">Experience</h2>
-      <div>
-        <p class="experiencia-texto">
-          I develop data-driven solutions and web applications. In my current
-          analytical role, I use <strong>Excel</strong> and
-          <strong>SQL</strong> principles to audit processes and ensure data
-          integrity. As a developer, I have led front-end projects using
-          <strong>JavaScript</strong>, <strong>HTML</strong>, and
-          <strong>CSS</strong>, focusing on both technical implementation and
-          <strong>UI/UX Design</strong>.
-        </p>
-
-        <div class="empresa">
-          <span class="empresa-ano">2025-Current</span>
-          <h3 class="empresa-titulo">A&C - Itaú</h3>
-          <span class="empresa-titulo">Administrative Analyst</span>
-          <p class="empresa-texto">
-            In my current role, I analyze client demands and audit banking
-            processes. I use analytical tools like Excel to ensure data
-            integrity and identify areas for improvement.
-          </p>
-          <ul class="empresa-habilidades">
-            <li>Data Analysis</li>
-            <li>Process Auditing</li>
-            <li>Excel</li>
-            <li>Problem Solving</li>
-            <li>SQL</li>
-          </ul>
-        </div>
-
-        <div class="empresa">
-          <span class="empresa-ano">2024</span>
-          <h3 class="empresa-titulo">BRCR Law Firm</h3>
-          <span class="empresa-titulo">Front-end Developer (Freelance)</span>
-          <p class="empresa-texto">
-            I took the technical lead on the firm's website redesign. I managed
-            the project from UI design in Figma to final implementation,
-            coordinating tasks and ensuring a high-quality delivery.
-          </p>
-          <ul class="empresa-habilidades">
-            <li>JavaScript</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>UI Design</li>
-            <li>Git</li>
-          </ul>
-        </div>
-
-        <div class="empresa">
-          <span class="empresa-ano">2024</span>
-          <h3 class="empresa-titulo">Resília Educação</h3>
-          <span class="empresa-titulo">Full Stack Student Developer</span>
-          <p class="empresa-texto">
-            Completed an intensive 6-month bootcamp focused on full-stack web
-            development. Developed several projects using technologies like
-            React, Node.js, and TypeScript.
-          </p>
-          <ul class="empresa-habilidades">
-            <li>React</li>
-            <li>Node.js</li>
-            <li>TypeScript</li>
-            <li>MongoDB</li>
-            <li>SQL</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="formacao" id="formacao" aria-label="Education">
-      <div class="formacao-container">
-        <h2 class="subtitulo">Education</h2>
-
-        <div>
-          <p class="formacao-texto">
-            My most recent academic experience is my ongoing
-            <strong>bachelor's degree</strong> 🎓 in
-            <strong>Information Systems</strong>. Besides that, I'm always
-            keeping myself up to date with intensive courses focused on data and
-            development.
-          </p>
-
-          <ul class="faculdade-lista">
-            <li class="faculdade">
-              <span class="faculdade-tipo">Bachelor</span>
-              <h3 class="faculdade-curso">Information Systems</h3>
-              <span class="faculdade-instituicao">Unifacisa</span>
-            </li>
-            <li class="faculdade">
-              <span class="faculdade-tipo">Bootcamp</span>
-              <h3 class="faculdade-curso">Full Stack Web Development</h3>
-              <span class="faculdade-instituicao">Resília Educação</span>
-            </li>
-          </ul>
-
-          <div class="formacao-extra">
-            <div class="cursos">
-              <h3>Key Courses</h3>
-              <ul>
-                <li>Data Analysis with Python <span>40h</span></li>
-                <li>Advanced SQL for Analytics <span>35h</span></li>
-              </ul>
-            </div>
-            <div class="idiomas">
-              <h3>Languages</h3>
-              <ul>
-                <li>Portuguese <span>/ Native</span></li>
-                <li>English <span>/ Professional</span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="footer" id="contact">
-      <div class="footer-container">
-        <p class="footer-texto">
-          I am currently seeking my first opportunity in Data Analysis and I'm
-          open to new projects. Feel free to contact me to schedule a chat 👋
-        </p>
-        <ul class="footer-contato">
-          <li>diego.tavares@email.com</li>
-          <li>+55 83 99999-9999</li>
+      <section class="grid-section equipe" data-anime="scroll" id="equipe">
+        <h1 class="titulo">Equipe de Desenvolvedores</h1>
+        <ul class="equipe-lista" data-tab="menu">
           <li>
-            <a href="https://www.linkedin.com/in/diegotaavaares/">LinkedIn</a>
+            <img src="img/FullSizeRender 2.jpg" />
+          </li>
+          <li>
+            <img src="img/FullSizeRender 2.jpg" />
           </li>
         </ul>
-        <p class="footer-copy">Diego Tavares. All rights reserved.</p>
-      </div>
-    </footer>
+        <div class="equipe-descricao" data-tab="content">
+          <section data-anime="show-right">
+            <h2>Diego</h2>
+            <p>
+              Sou um profissional em transição de carreira para a área de
+              Análise de Dados, atualmente cursando Sistemas de Informação. Meu
+              objetivo é utilizar a tecnologia para transformar dados brutos em
+              insights claros e estratégicos que impulsionem decisões de
+              negócio.
+            </p>
+            <p>
+              Tenho uma base sólida como Desenvolvedor de Software, com
+              experiência em liderança técnica de projetos e no uso de
+              tecnologias como JavaScript, HTML e CSS. Atualmente, aplico minha
+              capacidade analítica no setor bancário, auditando processos e
+              garantindo a integridade de dados com ferramentas como o Excel.
+            </p>
+            <p>
+              Minhas competências incluem SQL, Python para análise de dados e
+              metodologias de desenvolvimento ágil. Busco ativamente minha
+              primeira oportunidade para aplicar meu conhecimento, resolver
+              problemas complexos e agregar valor a uma equipe orientada a
+              dados.
+            </p>
+          </section>
 
-    <script src="./assets/js/main.js"></script>
+          <section data-anime="show-right">
+            <h2>Lucas</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              eos doloribus dignissimos facilis quasi ipsa amet. Id, dicta
+              commodi! Nemo accusantium, molestias dolorum consectetur voluptate
+              tenetur sit. Esse, consectetur laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut
+              eligendi sequi numquam consequatur quis nobis nisi voluptas
+              tenetur veritatis? Iure assumenda aspernatur perspiciatis pariatur
+              error ea magnam fuga maxime delectus?
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea quos
+              vitae laudantium architecto quibusdam, explicabo vel eius iste
+              modi tempore sit minus dignissimos tenetur, nobis, voluptates
+              dolore officia! Consectetur, ut.
+            </p>
+          </section>
+        </div>
+      </section>
+
+      <section class="grid-section faq" data-section="scroll" id="faq">
+        <h2 class="titulo">Sobre Nós & Competências</h2>
+        <dl class="faq-lista" data-anime="accordion">
+          <dt>Diego Tavares | Desenvolvedor & Analista de Dados</dt>
+          <dd>
+            Focado na análise de dados e no desenvolvimento back-end, Diego
+            transforma informações em soluções lógicas e funcionais. Sua
+            experiência abrange desde a otimização de processos com SQL e Python
+            até a construção de aplicações robustas com Node.js.
+          </dd>
+          <dt>
+            Lucas [Substitua o Sobrenome] | Designer UX/UI & Dev. Front-End
+          </dt>
+          <dd>
+            Especialista em criar experiências de usuário intuitivas e
+            interfaces visualmente atraentes. Lucas domina o front-end com HTML,
+            CSS e frameworks como React, garantindo que cada projeto seja não
+            apenas funcional, mas também centrado no usuário.
+          </dd>
+          <dt>Desenvolvimento Full Stack</dt>
+          <dd>
+            Juntos, cobrimos todas as etapas do desenvolvimento. Da arquitetura
+            do banco de dados e APIs REST (Diego) à implementação de interfaces
+            responsivas e dinâmicas (Lucas), entregamos projetos completos e de
+            alta performance.
+          </dd>
+          <dt>Estratégia e Metodologia</dt>
+          <dd>
+            Trabalhamos de forma colaborativa e ágil, utilizando Git para
+            versionamento e Figma para prototipação. Nosso objetivo é alinhar a
+            análise de dados com um design inteligente para criar produtos que
+            resolvem problemas reais.
+          </dd>
+        </dl>
+      </section>
+
+      <section class="grid-section contato" data-anime="scroll" id="contato">
+        <h1 class="titulo">Contato</h1>
+        <div
+          class="mapa"
+          data-tooltip
+          aria-label="Endereço próximo ao estacionamento."
+        >
+          <img src="img/mapa.png" />
+        </div>
+        <ul class="dados">
+          <li>diegofsm92@gmail.com</li>
+          <li>caitanoalbuquerque06@gmail.com</li>
+          <li>+55 (83) 99999-9999</li>
+          <li>Campina Grande - PB</li>
+        </ul>
+      </section>
+
+      <footer class="copy">
+        <p>Todos os direitos reservados.</p>
+      </footer>
+    </div>
+
+    <section class="modal-container" data-modal="container">
+      <div class="modal">
+        <button data-modal="fechar" class="fechar">X</button>
+        <form action="">
+          <label for="email">Email</label>
+          <input type="text" for="email" id="email" />
+          <label for="senha">Senha</label>
+          <input type="password" for="senha" id="senha" />
+          <button type="submit">Entrar</button>
+        </form>
+      </div>
+    </section>
+    <script src="main.js"></script>
   </body>
 </html>

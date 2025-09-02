@@ -31,6 +31,103 @@ img {
   max-width: 4ch;
 }
 
+/* Estilos para as novas seções do index.html */
+.equipe,
+.skills,
+.projetos {
+  max-width: 1200px;
+  padding: 120px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+
+.equipe .subtitulo,
+.skills .subtitulo,
+.projetos .subtitulo {
+  color: #e0e0e0;
+}
+
+.equipe-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.membro-card {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  color: #141414;
+  transition: transform 0.2s;
+}
+
+.membro-card:hover {
+  transform: scale(1.05);
+}
+
+.membro-card img {
+  border-radius: 50%;
+  max-width: 120px;
+  margin-bottom: 20px;
+}
+
+.membro-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.projetos-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.projeto-card {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.projeto-card h4 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.projeto-card a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #a3a3a3;
+}
+
+/* Ajustes para páginas individuais */
+.experiencia-container-individual,
+.formacao-item-individual {
+  grid-column: 1 / -1; /* Faz com que o conteúdo ocupe todo o espaço */
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 800px) {
+  .equipe,
+  .skills,
+  .projetos {
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+  .equipe .subtitulo,
+  .skills .subtitulo,
+  .projetos .subtitulo {
+    color: #141414;
+  }
+  .equipe-container,
+  .projetos-container {
+    grid-template-columns: 1fr;
+  }
+}
 @media (max-width: 800px) {
   .subtitulo {
     font-size: 3rem;

@@ -40,16 +40,3 @@ As seguintes ferramentas e tecnologias foram utilizadas na construção do proje
 ![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)
 
 ---
-
-Este é um projeto front-end estático. Para rodá-lo localmente, siga os passos abaixo:
-
-```bash
-# 1. Clone o repositório
-git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
-
-# 2. Navegue até a pasta do projeto
-cd seu-repositorio
-
-# 3. Abra o arquivo `index.html` no seu navegador de preferência.
-
-```
